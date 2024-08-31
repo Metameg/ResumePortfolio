@@ -58,6 +58,7 @@ body, html {
   height: 100%;
   padding: 0 50px;
   background: url("../assets/images/shapes.svg");
+  z-index: 2;
 }
 .hero .hero-content .text-content {
   max-width: 600px;
