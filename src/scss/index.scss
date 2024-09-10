@@ -321,8 +321,9 @@ h1 {
         position: relative;
         height: 100%;
         width: 100%;
+        overflow: hidden;
     }
-    
+
     .shape {
         position: absolute;
         opacity: 0; // Start with opacity 0
