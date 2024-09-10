@@ -11,7 +11,7 @@ h1 {
   font-size: 36px;
 }
 
-.skewed {
+.skewed-right {
   position: absolute;
   right: 0;
   left: 0;
@@ -20,6 +20,17 @@ h1 {
   background: #2c3e50;
   z-index: 0;
   transform: skewY(8deg);
+}
+
+.skewed-left {
+  position: absolute;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: #2c3e50;
+  z-index: 0;
+  transform: skewY(-8deg);
 }
 
 .hero {
@@ -162,6 +173,8 @@ h1 {
   color: white;
   margin-top: 80px;
   padding: 0 50px;
+  z-index: 1;
+  position: relative;
 }
 .about-section .paragraphs {
   display: flex;
@@ -169,6 +182,7 @@ h1 {
 }
 .about-section .paragraphs p {
   line-height: 1.6em;
+  z-index: 1;
 }
 
 .portfolio-section {
@@ -181,9 +195,16 @@ h1 {
   justify-content: space-around;
 }
 .card-container .omniclip-card {
-  background: url("../assets/images/omniclip-thumbnail.jpg") no-repeat;
-  background-size: cover;
+  background: url("../assets/images/omni-thumbnail.jpg") no-repeat;
+  background-size: contain;
   background-position: center;
+  background-color: #000;
+}
+.card-container .tdd-card {
+  background: url("../assets/images/tdd_logo.png") no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-color: #111;
 }
 .card-container .card {
   position: relative;
@@ -192,6 +213,7 @@ h1 {
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease-in-out;
+  z-index: 1;
 }
 .card-container .card:hover {
   cursor: pointer;
@@ -213,7 +235,7 @@ h1 {
   opacity: 1;
   transform: translate(-50%, -50%) scale(1);
 }
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .card-container {
     flex-direction: column;
     justify-content: center;
@@ -222,6 +244,53 @@ h1 {
   .card-container .card {
     width: 100%;
   }
+}
+
+.scroll-section {
+  position: relative;
+  height: 200vh;
+}
+.scroll-section .shape {
+  position: absolute;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.scroll-section .shape.shape-1 {
+  width: 100px;
+  height: 100px;
+  background: url("../assets/shapes/red-square.svg") no-repeat center;
+  background-size: contain;
+  top: 20%;
+  left: 10%;
+}
+.scroll-section .shape.shape-2 {
+  width: 150px;
+  height: 150px;
+  background: url("../assets/shapes/blue-circle.svg") no-repeat center;
+  background-size: contain;
+  top: 40%;
+  left: 50%;
+}
+.scroll-section .shape.shape-3 {
+  width: 140px;
+  height: 140px;
+  background: url("../assets/shapes/blue-hollow-circle.svg") no-repeat center;
+  background-size: contain;
+  top: 60%;
+  left: 30%;
+}
+.scroll-section .shape.shape-4 {
+  width: 180px;
+  height: 180px;
+  background: url("../assets/shapes/red-circle.svg") no-repeat center;
+  background-size: contain;
+  top: 80%;
+  left: 70%;
+}
+.scroll-section .shape.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 @media (max-width: 768px) {
