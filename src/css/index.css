@@ -250,47 +250,20 @@ h1 {
   position: relative;
   height: 200vh;
 }
+.scroll-section .shape-container {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
 .scroll-section .shape {
   position: absolute;
   opacity: 0;
-  transform: translateY(50px);
+  transform: scale(0.5);
   transition: opacity 0.5s ease, transform 0.5s ease;
-}
-.scroll-section .shape.shape-1 {
-  width: 100px;
-  height: 100px;
-  background: url("../assets/shapes/red-square.svg") no-repeat center;
-  background-size: contain;
-  top: 20%;
-  left: 10%;
-}
-.scroll-section .shape.shape-2 {
-  width: 150px;
-  height: 150px;
-  background: url("../assets/shapes/blue-circle.svg") no-repeat center;
-  background-size: contain;
-  top: 40%;
-  left: 50%;
-}
-.scroll-section .shape.shape-3 {
-  width: 140px;
-  height: 140px;
-  background: url("../assets/shapes/blue-hollow-circle.svg") no-repeat center;
-  background-size: contain;
-  top: 60%;
-  left: 30%;
-}
-.scroll-section .shape.shape-4 {
-  width: 180px;
-  height: 180px;
-  background: url("../assets/shapes/red-circle.svg") no-repeat center;
-  background-size: contain;
-  top: 80%;
-  left: 70%;
 }
 .scroll-section .shape.visible {
   opacity: 1;
-  transform: translateY(0);
+  transform: scale(1);
 }
 
 @media (max-width: 768px) {
