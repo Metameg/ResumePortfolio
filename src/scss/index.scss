@@ -35,7 +35,7 @@ h1 {
 
 .skewed {
     position: absolute;
-    bottom: -75px;
+    // bottom: 175px;
     right: 0;
     left: 0;
     width: 100%;
@@ -48,7 +48,7 @@ h1 {
 
 .hero {
     position: relative;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     
@@ -93,7 +93,7 @@ h1 {
         justify-content: space-between;
         align-items: center;
         height: 100%;
-        padding: 0 50px;
+        padding: 200px 50px;
         background: url('../assets/images/shapes.svg');
         z-index: 2;
 
@@ -235,9 +235,8 @@ h1 {
 
 
 .portfolio-section {
-    // display: flex;
-    // justify-content: space-around;
     margin: 50px 0;
+    padding: 0 50px;
 }
 
 .card-container {
@@ -294,9 +293,6 @@ h1 {
   
 @media (max-width: 768px) {
     .section-divider {
-        margin-bottom: 290px;
-        .skewed {
-            bottom: -231px;
-        }
+        margin-bottom: 80px;
     }
 }
