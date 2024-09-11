@@ -58,7 +58,7 @@ h1 {
   position: relative;
 }
 .hero .navbar .nav-links li a {
-  color: #f50057;
+  color: #66C3FF;
   text-decoration: none;
   font-size: 16px;
   padding: 10px 15px;
@@ -267,6 +267,75 @@ h1 {
 .scroll-section .shape.visible {
   opacity: 1;
   transform: scale(1);
+}
+
+.resume-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 20;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+}
+.resume-overlay .resume-container {
+  border-radius: 100px;
+  background: none;
+  padding: 40px;
+  max-width: 800px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  height: 100%;
+}
+.resume-overlay .resume-container .header {
+  text-align: center;
+}
+.resume-overlay .resume-container .header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #f50057;
+}
+.resume-overlay .resume-container .header p {
+  font-size: 1rem;
+  color: #66C3FF;
+}
+.resume-overlay .resume-container .header a {
+  color: #0073e6;
+  text-decoration: none;
+}
+.resume-overlay .resume-container .summary, .resume-overlay .resume-container .skills, .resume-overlay .resume-container .experience, .resume-overlay .resume-container .education, .resume-overlay .resume-container .profiles {
+  margin: 20px 0;
+}
+.resume-overlay .resume-container .summary h2, .resume-overlay .resume-container .skills h2, .resume-overlay .resume-container .experience h2, .resume-overlay .resume-container .education h2, .resume-overlay .resume-container .profiles h2 {
+  font-size: 1.8rem;
+  color: #fff;
+  border-bottom: 2px solid #f50057;
+  padding-bottom: 10px;
+}
+.resume-overlay .resume-container .summary p, .resume-overlay .resume-container .summary li, .resume-overlay .resume-container .skills p, .resume-overlay .resume-container .skills li, .resume-overlay .resume-container .experience p, .resume-overlay .resume-container .experience li, .resume-overlay .resume-container .education p, .resume-overlay .resume-container .education li, .resume-overlay .resume-container .profiles p, .resume-overlay .resume-container .profiles li {
+  font-size: 1rem;
+  color: #fff;
+}
+.resume-overlay .resume-container .summary ul, .resume-overlay .resume-container .skills ul, .resume-overlay .resume-container .experience ul, .resume-overlay .resume-container .education ul, .resume-overlay .resume-container .profiles ul {
+  padding-left: 20px;
+}
+.resume-overlay .resume-container .skills ul {
+  -moz-columns: 2;
+       columns: 2;
+}
+.resume-overlay .resume-container .skills ul li {
+  list-style-type: disc;
+}
+.resume-overlay .resume-container .experience h3, .resume-overlay .resume-container .education h3 {
+  font-size: 1.4rem;
+  color: #66C3FF;
+}
+.resume-overlay .resume-container .profiles a {
+  color: #0073e6;
+  text-decoration: none;
 }
 
 @media (max-width: 768px) {
