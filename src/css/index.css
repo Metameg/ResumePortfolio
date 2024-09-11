@@ -11,6 +11,33 @@ h1 {
   font-size: 36px;
 }
 
+.custom-btn {
+  box-shadow: inset 0px 34px 0px -15px #f50057;
+  background: linear-gradient(to bottom, #f50057 5%, #d62563 100%);
+  background-color: #f50057;
+  border-radius: 21px;
+  border: 3px solid #241d13;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Courier New;
+  font-size: 17px;
+  font-weight: bold;
+  padding: 14px 25px;
+  text-decoration: none;
+  text-shadow: 0px -1px 0px #7a2a1d;
+}
+
+.custom-btn:hover {
+  background: linear-gradient(to bottom, #d62563 5%, #f50057 100%);
+  background-color: #fff;
+}
+
+.custom-btn:active {
+  position: relative;
+  top: 1px;
+}
+
 .skewed-right {
   position: absolute;
   right: 0;
@@ -189,24 +216,23 @@ h1 {
   margin: 50px 0;
   padding: 0 50px;
 }
-
-.card-container {
+.portfolio-section .card-container {
   display: flex;
   justify-content: space-around;
 }
-.card-container .omniclip-card {
+.portfolio-section .card-container .omniclip-card {
   background: url("../assets/images/omni-thumbnail.jpg") no-repeat;
   background-size: contain;
   background-position: center;
   background-color: #000;
 }
-.card-container .tdd-card {
+.portfolio-section .card-container .tdd-card {
   background: url("../assets/images/tdd_logo.png") no-repeat;
   background-size: contain;
   background-position: center;
   background-color: #111;
 }
-.card-container .card {
+.portfolio-section .card-container .card {
   position: relative;
   width: 33%;
   height: 400px;
@@ -215,10 +241,10 @@ h1 {
   transition: transform 0.3s ease-in-out;
   z-index: 1;
 }
-.card-container .card:hover {
+.portfolio-section .card-container .card:hover {
   cursor: pointer;
 }
-.card-container .card .card-title {
+.portfolio-section .card-container .card .card-title {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -231,19 +257,26 @@ h1 {
   border-radius: 5px;
   transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
-.card-container .card:hover .card-title {
+.portfolio-section .card-container .card:hover .card-title {
   opacity: 1;
   transform: translate(-50%, -50%) scale(1);
 }
 @media (max-width: 1200px) {
-  .card-container {
+  .portfolio-section .card-container {
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  .card-container .card {
+  .portfolio-section .card-container .card {
     width: 100%;
   }
+}
+.portfolio-section .button-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 .scroll-section {
@@ -288,6 +321,14 @@ h1 {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   height: auto;
+}
+.resume-overlay .resume-container .button-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.resume-overlay .resume-container .button-container .custom-btn {
+  border-radius: 0;
 }
 .resume-overlay .resume-container .header {
   text-align: center;

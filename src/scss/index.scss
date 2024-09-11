@@ -33,6 +33,35 @@ h1 {
     // }
 }
 
+
+
+.custom-btn {
+    box-shadow:inset 0px 34px 0px -15px $primary-color;
+    background:linear-gradient(to bottom, $primary-color 5%, #d62563 100%);
+    background-color:$primary-color;
+    border-radius:21px;
+    border:3px solid #241d13;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Courier New;
+    font-size:17px;
+    font-weight:bold;
+    padding:14px 25px;
+    text-decoration:none;
+    text-shadow:0px -1px 0px #7a2a1d;
+}
+
+.custom-btn:hover {
+    background:linear-gradient(to bottom, #d62563 5%, $primary-color 100%);
+    background-color:#fff;
+}
+
+.custom-btn:active {
+    position:relative;
+    top:1px;
+}
+
 .skewed-right {
     position: absolute;
     right: 0;
@@ -248,74 +277,84 @@ h1 {
 .portfolio-section {
     margin: 50px 0;
     padding: 0 50px;
-}
 
-.card-container {
-    display: flex;
-    justify-content: space-around;
 
-    .omniclip-card {
-        background: url('../assets/images/omni-thumbnail.jpg') no-repeat;
-        background-size: contain;
-        background-position: center;
-        background-color: #000;
-    }
+    .card-container {
+        display: flex;
+        justify-content: space-around;
 
-    .tdd-card {
-        background: url('../assets/images/tdd_logo.png') no-repeat;
-        background-size: contain;
-        background-position: center;
-        background-color: #111;
-    }
-
-    .card {
-        position: relative;
-        width: 33%;
-        height: 400px;
-        border-radius: 10px;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-        transition: transform 0.3s ease-in-out;
-        z-index: 1;
-
-        &:hover {
-            cursor: pointer;
+        .omniclip-card {
+            background: url('../assets/images/omni-thumbnail.jpg') no-repeat;
+            background-size: contain;
+            background-position: center;
+            background-color: #000;
         }
 
-        .card-title {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%) scale(0);
-            opacity: 0;
-            background-color: rgba(0, 0, 0, 0.7);
-            color: white;
-            padding: 10px 20px;
-            font-size: 24px;
-            border-radius: 5px;
-            transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+        .tdd-card {
+            background: url('../assets/images/tdd_logo.png') no-repeat;
+            background-size: contain;
+            background-position: center;
+            background-color: #111;
         }
-
-        &:hover .card-title {
-            opacity: 1;
-            transform: translate(-50%, -50%) scale(1);
-        }
-    }
-
-    @media (max-width: 1200px) {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
 
         .card {
-            width: 100%;
+            position: relative;
+            width: 33%;
+            height: 400px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+            z-index: 1;
+
+            &:hover {
+                cursor: pointer;
+            }
+
+            .card-title {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%) scale(0);
+                opacity: 0;
+                background-color: rgba(0, 0, 0, 0.7);
+                color: white;
+                padding: 10px 20px;
+                font-size: 24px;
+                border-radius: 5px;
+                transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+            }
+
+            &:hover .card-title {
+                opacity: 1;
+                transform: translate(-50%, -50%) scale(1);
+            }
         }
+
+        
+        @media (max-width: 1200px) {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+            .card {
+                width: 100%;
+            }
+        }
+    }
+
+    .button-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 40px;
+        margin-bottom: 40px;
     }
 }
 
 
 .scroll-section {
     position: relative;
-    height: 166vh; // This ensures there's enough space to scroll
+    height: 166vh; 
 
     .shape-container {
         position: relative;
@@ -360,6 +399,16 @@ h1 {
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         border-radius: 10px;
         height: auto;
+
+        .button-container {
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+
+            .custom-btn {
+                border-radius: 0;
+            }
+        }
 
         .header {
             text-align: center;
