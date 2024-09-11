@@ -248,7 +248,7 @@ h1 {
 
 .scroll-section {
   position: relative;
-  height: 200vh;
+  height: 166vh;
 }
 .scroll-section .shape-container {
   position: relative;
@@ -279,7 +279,6 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 60px;
 }
 .resume-overlay .resume-container {
   border-radius: 100px;
@@ -288,7 +287,7 @@ h1 {
   max-width: 800px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
-  height: 100%;
+  height: auto;
 }
 .resume-overlay .resume-container .header {
   text-align: center;

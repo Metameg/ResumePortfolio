@@ -315,7 +315,7 @@ h1 {
 
 .scroll-section {
     position: relative;
-    height: 200vh; // This ensures there's enough space to scroll
+    height: 166vh; // This ensures there's enough space to scroll
 
     .shape-container {
         position: relative;
@@ -351,7 +351,6 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 60px;
     
     .resume-container {
         border-radius: 100px;
@@ -360,7 +359,7 @@ h1 {
         max-width: 800px;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         border-radius: 10px;
-        height: 100%;
+        height: auto;
 
         .header {
             text-align: center;
