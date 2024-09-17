@@ -60,6 +60,19 @@ h1 {
   transform: skewY(-8deg);
 }
 
+.social-icons {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+.social-icons li {
+  margin: 0 5px;
+}
+.social-icons li a {
+  color: #fff;
+  font-size: 18px;
+}
+
 .hero {
   position: relative;
   min-height: 100vh;
@@ -386,7 +399,6 @@ h1 {
   padding: 40px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1), 0 -4px 10px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
-  margin-bottom: 40px;
   z-index: 1;
 }
 .contact-section .contact-info {
@@ -406,11 +418,14 @@ h1 {
   justify-content: center;
   flex-direction: column;
   gap: 20px;
-  width: 300px;
+  width: -moz-fit-content;
+  width: fit-content;
   border: #66C3FF 2px solid;
   border-radius: 25px;
   background-color: #bfe1f8;
   padding: 20px;
+  position: relative;
+  z-index: 1;
 }
 .contact-section .contact-form input, .contact-section .contact-form textarea {
   padding: 10px;
@@ -436,24 +451,37 @@ h1 {
 .contact-section .contact-form button:hover {
   background-color: #3658A7;
 }
+@media (max-width: 768px) {
+  .contact-section {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .contact-section .contact-form {
+    margin: 0 auto;
+  }
+  .contact-section .contact-info {
+    display: none;
+  }
+}
 
 footer {
   background-color: #000;
   color: #fff;
   padding: 20px;
+  position: relative;
+  z-index: 1;
 }
-
-.footer-top {
+footer .footer-top {
   display: flex;
   justify-content: space-between;
 }
-
-.logo a {
+footer .logo a {
   font-size: 24px;
   font-weight: bold;
 }
-.logo p {
-  font-size: 14px;
+footer .logo p {
+  font-size: 24px;
+  color: #f50057;
 }
 
 .footer-bottom {
@@ -462,21 +490,26 @@ footer {
   align-items: center;
   margin-top: 20px;
 }
-.footer-bottom .social-icons {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-}
-.footer-bottom .social-icons li {
-  margin: 0 5px;
-}
-.footer-bottom .social-icons li a {
-  color: #fff;
-  font-size: 18px;
+
+.footer-section-divider {
+  bottom: 20px;
 }
 
 @media (max-width: 768px) {
   .section-divider {
     margin-bottom: 80px;
+  }
+  .contact-section {
+    flex-direction: column;
+    justify-content: center;
+    background: url("../assets/images/hexagon-grid.svg") no-repeat;
+  }
+  .footer-section-divider {
+    bottom: 120px;
+  }
+}
+@media (max-width: 480px) {
+  .footer-bottom {
+    flex-direction: column;
   }
 }/*# sourceMappingURL=index.css.map */
