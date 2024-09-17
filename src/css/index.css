@@ -422,7 +422,7 @@ h1 {
   width: fit-content;
   border: #66C3FF 2px solid;
   border-radius: 25px;
-  background-color: #bfe1f8;
+  background-color: #334c5d;
   padding: 20px;
   position: relative;
   z-index: 1;
@@ -447,9 +447,6 @@ h1 {
   background-color: #4169E1;
   cursor: pointer;
   transition: background-color 0.3s;
-}
-.contact-section .contact-form button:hover {
-  background-color: #3658A7;
 }
 @media (max-width: 768px) {
   .contact-section {
