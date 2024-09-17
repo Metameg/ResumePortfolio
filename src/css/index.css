@@ -378,6 +378,103 @@ h1 {
   text-decoration: none;
 }
 
+.contact-section {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  padding: 40px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1), 0 -4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin-bottom: 40px;
+  z-index: 1;
+}
+.contact-section .contact-info {
+  color: #f50057;
+  background: url("../assets/images/hexagon-grid.svg") no-repeat;
+}
+.contact-section .contact-info h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.contact-section .contact-info p {
+  font-size: 16px;
+}
+.contact-section .contact-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  width: 300px;
+  border: #66C3FF 2px solid;
+  border-radius: 25px;
+  background-color: #bfe1f8;
+  padding: 20px;
+}
+.contact-section .contact-form input, .contact-section .contact-form textarea {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
+.contact-section .contact-form input::-moz-placeholder, .contact-section .contact-form textarea::-moz-placeholder {
+  color: #aaa;
+}
+.contact-section .contact-form input::placeholder, .contact-section .contact-form textarea::placeholder {
+  color: #aaa;
+}
+.contact-section .contact-form button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #4169E1;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.contact-section .contact-form button:hover {
+  background-color: #3658A7;
+}
+
+footer {
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo a {
+  font-size: 24px;
+  font-weight: bold;
+}
+.logo p {
+  font-size: 14px;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.footer-bottom .social-icons {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+.footer-bottom .social-icons li {
+  margin: 0 5px;
+}
+.footer-bottom .social-icons li a {
+  color: #fff;
+  font-size: 18px;
+}
+
 @media (max-width: 768px) {
   .section-divider {
     margin-bottom: 80px;
