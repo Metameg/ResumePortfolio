@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-    const shapeContainer = document.querySelector('.shape-container');
+    const shapeContainer = document.querySelector('.resume-overlay');
     const numShapes = 24; // Number of shapes to generate
     const shapeImages = [
         'assets/shapes/blue-circle.svg',
