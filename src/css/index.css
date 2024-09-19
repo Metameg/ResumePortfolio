@@ -208,7 +208,7 @@ h1 {
   height: 100%;
   padding: 200px 50px;
   background: url("../assets/images/shapes.svg");
-  z-index: 2;
+  z-index: 1;
 }
 .hero .hero-content .text-content {
   max-width: 600px;
@@ -552,6 +552,24 @@ h1 {
 #contact-section .contact-form p a {
   color: #f2f980;
 }
+#contact-section .contact-form .validation-box {
+  display: flex;
+}
+#contact-section .contact-form .validation-box .error {
+  margin-top: 30px;
+  color: #e3ff12;
+}
+#contact-section .contact-form .validation-box .success {
+  margin-top: 30px;
+  color: #82ff82;
+}
+#contact-section .contact-form #form_error, #contact-section .contact-form .success_icon, #contact-section .contact-form .error_msg {
+  margin: 0.5rem;
+  display: none;
+}
+#contact-section .contact-form .error_msg {
+  color: #e3ff12;
+}
 #contact-section .contact-form button {
   padding: 10px;
   border: none;
@@ -578,6 +596,36 @@ h1 {
   }
 }
 
+.spinner-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.spinner {
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-left-color: #333;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
 footer {
   background-color: #000;
   color: #fff;
@@ -607,6 +655,14 @@ footer .logo p {
 
 .footer-section-divider {
   bottom: 20px;
+}
+
+.success-message {
+  background-color: #1c1c1c;
+  position: fixed;
+  font-size: 22px;
+  top: 0;
+  z-index: 9999;
 }
 
 @media (max-width: 768px) {

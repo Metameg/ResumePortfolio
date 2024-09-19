@@ -1,3 +1,11 @@
+<?php
+    session_start();
+    // Generate CSRF token if not set
+    if (!isset($_SESSION['csrf_token'])) {
+        $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,8 +21,10 @@
     </script>
     <script src="js/ShapeIntersectionObserver.js"></script>
     <script src="js/navbarController.js"></script>
+    <script src="js/showSuccessMessage.js" defer></script> 
 </head>
 <body>
+
     <header class="hero">
         <nav class="navbar">
             <div class="hamburger">
@@ -149,10 +159,6 @@
                         <p>Graduated Magna Cum Laude | GPA: 3.73</p>
                     </div>
             
-                    <!-- <div class="profiles">
-                        <h2>Website, Portfolio and Profiles</h2>
-                        <p><a href="https://github.com/Metameg">GitHub</a> | <a href="https://alex-metzger.com">Portfolio</a></p>
-                    </div> -->
                     <div class="button-container">
                         <a href="Alex-Metzger_Resume.pdf" class="custom-btn portfolio-btn" download="Alex-Metzger_Resume.pdf">Download PDF</a>
                     </div>
@@ -169,24 +175,137 @@
         <div class="contact-info">
             <img src="assets/images/contact_me.svg" width="200" height="500">
         </div>
-        <form class="contact-form">
+        <form id="contact_form" class="contact-form" method="post" enctype="multipart/form-data">
             <h2>Contact Me</h2>
+            <p class="form-msg">Give me a shout!</p>    
             <div class="form-info">
                 <p>Email: <a href="mailto:ametzger08@gmail.com">ametzger08@gmail.com</a></p>
                 <p>Phone: <a href="tel:+15758059738">575-805-9738</a></p>
-                <!-- <p class="form-msg">Give me a shout!</p>     -->
             </div>
 
-            <input type="text" placeholder="Name" name="name" required>
-            <input type="email" placeholder="Email" name="email" required>
-            <textarea placeholder="Message" name="message" required></textarea>
+            <div class="validation-box">
+                <input id="full_name" type="text" placeholder="Name" name="name" required>
+                <img id="name_success" class="success_icon" src="assets/icons/green_check.svg" width="20" height="20">
+            </div>
+            <span id="name_error" class="error_msg">Field is Required</span>
+
+            <div class="validation-box">
+                <input id="email" type="email" placeholder="Email" name="email" required>
+                <img id="email_success" class="success_icon" src="assets/icons/green_check.svg" width="20" height="20">
+            </div>
+            <span id="email_error" class="error_msg">Field is Required</span>
+
+            <div class="validation-box">
+                <input id="phone" type="phone" placeholder="Phone" name="phone" required>
+                <img id="phone_success" class="success_icon" src="assets/icons/green_check.svg" width="20" height="20">
+            </div>  
+            <span id="phone_error" class="error_msg">Field is Required</span>
+
+            <div class="validation-box">
+                <textarea id="message" placeholder="Message" name="message" required></textarea>
+                <img id="message_success" class="success_icon" src="assets/icons/green_check.svg" width="20" height="20">
+            </div>
+            <span id="message_error" class="error_msg">Field is Required</span>
+
+            <input type="hidden" name="csrf_token" value="<?php echo htmlspecialchars($_SESSION['csrf_token']); ?>">
             <button type="submit" class="custom-btn">Submit</button>
+            <span id="form_error" class="error">
+                There was a problem submitting the form. <br />
+                Check the fields for errors.
+            </span>
+            <div id="responseMessage"></div>
+
         </form>
-        <section class="section-divider">
+        
+        <div id="spinner_overlay" class="spinner-overlay">
+            <div class="spinner"></div>
+        </div>
+
+        <div class="section-divider">
             <div class="skewed-left footer-section-divider"></div>
-        </section>
+        </div>
+
     </section>
      
+    <!-- Response Message for debugging -->
+    
+    <script type="module" src="js/contactForm.js"></script>
+    <script type="module" src="js/validators.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="module">
+        import {validators} from "./js/validators.js";
+
+        $(document).ready(function() {
+            $('#contact_form').submit(function(e) {
+                e.preventDefault(); 
+                console.log("submitted")    ;
+
+                const isValid = validators.validateForm();
+
+                if (!isValid) {
+                    event.preventDefault();
+                    // Display error message beneath the form
+                    document.getElementById('form_error').style.display = "block";
+                    document.querySelector('.success').style.display = "none";
+                    // Prevent form submission
+                    event.preventDefault();
+
+                    return;
+                }
+                // Display loader
+                // $('#loader').show();
+                $('#spinner_overlay').css('display', 'flex');
+
+
+                var formData = new FormData(this);
+                for (var pair of formData.entries()) {
+                    console.log(pair[0] + ': ' + pair[1]);
+                }
+                $.ajax({
+                    url: 'plugins/contactForm/sendMail.php',
+                    type: 'POST',
+                    data: formData,
+                    contentType: false,
+                    processData: false,
+                    dataType: 'json', // Expect JSON response
+                    success: function(response) {
+                        if (response.status === 'success') {
+                            $('#responseMessage').html('<p class="success">' + response.message + '</p>');
+                            $('.success').css('display', 'block');
+                            $('.error').css('display', 'none');
+                            $('#contact_form')[0].reset(); // Optionally reset form fields
+                            <?php
+                                echo 'showMessage("Email sent successfully!");';
+                            ?>
+                        } else {
+                            // $('#responseMessage').html('<p class="error">' + response.message + '</p>');
+                            $('.success').css('display', 'none');
+                            $('.error').css('display', 'block');
+                            <?php
+                                echo 'showMessage("Oops! Something went wrong.");';
+                            ?>
+
+                        }
+
+                        
+                    },
+                    error: function(xhr, status, error) {
+                        // $('#responseMessage').html('<p class="error">Error: ' + error + '</p>');
+                        $('.success').css('display', 'none');
+                        $('.error').css('display', 'block');
+                        <?php
+                            echo 'showMessage("Oops! Something went wrong.");';
+                        ?>
+                    },
+                    complete: function() {
+                        // Hide loader when request completes
+                        $('#spinner_overlay').css('display', 'none');
+
+                    }
+                });
+            });
+        });
+    </script>
 
     <footer>
         <div class="footer-top">
@@ -203,5 +322,6 @@
             <p>&copy; Copyright. All rights reserved.</p>
         </div>
     </footer>
+    <script type="module" src="js/contactForm.js"></script>
 </body>
 </html>
