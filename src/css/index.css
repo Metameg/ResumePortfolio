@@ -3,6 +3,7 @@ body, html {
   padding: 0;
   font-family: "Arial", sans-serif;
   background-color: #1c1c1c;
+  scroll-behavior: smooth;
 }
 
 h1 {
@@ -305,43 +306,43 @@ h1 {
     width: 100%;
   }
 }
-.about-section {
+#about-section {
   color: white;
   margin-top: 80px;
   padding: 0 50px;
   z-index: 1;
   position: relative;
 }
-.about-section .paragraphs {
+#about-section .paragraphs {
   display: flex;
   gap: 5%;
 }
-.about-section .paragraphs p {
+#about-section .paragraphs p {
   line-height: 1.6em;
   z-index: 1;
 }
 
-.portfolio-section {
+#portfolio-section {
   margin: 50px 0;
   padding: 0 50px;
 }
-.portfolio-section .card-container {
+#portfolio-section .card-container {
   display: flex;
   justify-content: space-around;
 }
-.portfolio-section .card-container .omniclip-card {
+#portfolio-section .card-container .omniclip-card {
   background: url("../assets/images/omni-thumbnail.jpg") no-repeat;
   background-size: contain;
   background-position: center;
   background-color: #000;
 }
-.portfolio-section .card-container .tdd-card {
+#portfolio-section .card-container .tdd-card {
   background: url("../assets/images/tdd_logo.png") no-repeat;
   background-size: contain;
   background-position: center;
   background-color: #111;
 }
-.portfolio-section .card-container .card {
+#portfolio-section .card-container .card {
   position: relative;
   width: 33%;
   height: 400px;
@@ -350,10 +351,10 @@ h1 {
   transition: transform 0.3s ease-in-out;
   z-index: 1;
 }
-.portfolio-section .card-container .card:hover {
+#portfolio-section .card-container .card:hover {
   cursor: pointer;
 }
-.portfolio-section .card-container .card .card-title {
+#portfolio-section .card-container .card .card-title {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -366,21 +367,21 @@ h1 {
   border-radius: 5px;
   transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
-.portfolio-section .card-container .card:hover .card-title {
+#portfolio-section .card-container .card:hover .card-title {
   opacity: 1;
   transform: translate(-50%, -50%) scale(1);
 }
 @media (max-width: 1200px) {
-  .portfolio-section .card-container {
+  #portfolio-section .card-container {
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  .portfolio-section .card-container .card {
+  #portfolio-section .card-container .card {
     width: 100%;
   }
 }
-.portfolio-section .button-container {
+#portfolio-section .button-container {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -490,7 +491,7 @@ h1 {
   text-decoration: none;
 }
 
-.contact-section {
+#contact-section {
   position: relative;
   display: flex;
   flex-wrap: wrap;
@@ -502,18 +503,18 @@ h1 {
   z-index: 1;
   margin-top: 50px;
 }
-.contact-section .contact-info {
+#contact-section .contact-info {
   color: #f50057;
   background: url("../assets/images/hexagon-grid.svg") no-repeat;
 }
-.contact-section .contact-info h2 {
+#contact-section .contact-info h2 {
   font-size: 24px;
   margin-bottom: 10px;
 }
-.contact-section .contact-info p {
+#contact-section .contact-info p {
   font-size: 16px;
 }
-.contact-section .contact-form {
+#contact-section .contact-form {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -528,19 +529,29 @@ h1 {
   position: relative;
   z-index: 1;
 }
-.contact-section .contact-form input, .contact-section .contact-form textarea {
+#contact-section .contact-form h2 {
+  text-align: center;
+  font-size: 24px;
+  margin-top: 45px;
+  color: white;
+  font-style: bold;
+}
+#contact-section .contact-form input, #contact-section .contact-form textarea {
   padding: 10px;
   border: none;
   border-radius: 5px;
   outline: none;
 }
-.contact-section .contact-form input::-moz-placeholder, .contact-section .contact-form textarea::-moz-placeholder {
+#contact-section .contact-form input::-moz-placeholder, #contact-section .contact-form textarea::-moz-placeholder {
   color: #aaa;
 }
-.contact-section .contact-form input::placeholder, .contact-section .contact-form textarea::placeholder {
+#contact-section .contact-form input::placeholder, #contact-section .contact-form textarea::placeholder {
   color: #aaa;
 }
-.contact-section .contact-form button {
+#contact-section .contact-form p a {
+  color: #f2f980;
+}
+#contact-section .contact-form button {
   padding: 10px;
   border: none;
   border-radius: 5px;
@@ -550,7 +561,7 @@ h1 {
   transition: background-color 0.3s;
 }
 @media (max-width: 768px) {
-  .contact-section {
+  #contact-section {
     flex-direction: column;
     justify-content: center;
     width: 100%;
@@ -558,11 +569,11 @@ h1 {
     margin: 0;
     padding: 0;
   }
-  .contact-section .contact-form {
+  #contact-section .contact-form {
     margin: 0 auto;
     padding: 0;
   }
-  .contact-section .contact-info {
+  #contact-section .contact-info {
     display: none;
   }
 }
@@ -602,7 +613,7 @@ footer .logo p {
   .section-divider {
     margin-bottom: 80px;
   }
-  .contact-section {
+  #contact-section {
     flex-direction: column;
     justify-content: center;
     background: url("../assets/images/hexagon-grid.svg") no-repeat;

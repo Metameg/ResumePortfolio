@@ -24,20 +24,20 @@
             </div>
         
             <ul class="mobile-menu">
-                <li><a href="#">About</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#about-section">About</a></li>
+                <li><a href="#portfolio-section">Projects</a></li>
+                <li><a href="#contact-section">Contact</a></li>
             </ul>
 
             <ul class="nav-links">
-                <li><a href="#d">About</a></li>
-                <li><a href="#d">Projects</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#about-section">About</a></li>
+                <li><a href="#portfolio-section">Projects</a></li>
+                <li><a href="#contact-section">Contact</a></li>
             </ul>
 
             <ul class="social-icons">
-                <li><a href="#"><img src="assets/icons/email-blue.svg" width="25" height="25"></a></li>
-                <li><a href="#"><img src="assets/icons/phone-blue.svg" width="20" height="20"></a></li>
+                <li><a href="mailto:ametzger08@gmail.com"><img src="assets/icons/email-blue.svg" width="25" height="25"></a></li>
+                <li><a href="tel:+15758059738"><img src="assets/icons/phone-blue.svg" width="20" height="20"></a></li>
                 <li><a href="https://www.linkedin.com/in/alex-metzger-699802233/"><img src="assets/icons/linkedin-blue.svg" width="25" height="25"></a></li>
             </ul> 
 
@@ -50,7 +50,7 @@
                 <h1>Alex Metzger</h1>
                 <p>Software Developer | Backend 
                 </p>
-                <button class="cta-button">Get in Touch</button>
+                <a href="#contact-section"><button class="cta-button">Get in Touch</button></a>
             </div>
             <div class="img-container">
                 <div class="image-content">
@@ -66,7 +66,7 @@
     </section>
 
 
-    <section class="about-section">
+    <section id="about-section">
         <h1>About Me</h1>
         <div class="paragraphs">
             <p>I'm an aspiring software developer from Houston, TX, currently pursuing a graduate degree in Artificial Intelligence at the University of Northern Texas. My diverse experiences have fueled my passion for technology and problem-solving through code.</p>
@@ -74,19 +74,19 @@
         </div>
     </section>
 
-    <section class="portfolio-section">
+    <section id="portfolio-section">
         <h1>Recent Projects</h1>
         <div class="card-container">
-            <div class="card omniclip-card">
+            <a href="#" class="card omniclip-card">
                 <div class="card-title">OmniClip</div>
-            </div>
-            <div class="card tdd-card">
+            </a>
+            <a href="https://thedomaindesigners.com/" class="card tdd-card">
                 <div class="card-title">The Domain Designers</div>
-            </div>
+            </a>
         </div>
 
         <div class="button-container">
-            <a href="#" class="custom-btn portfolio-btn">Source Code</a>
+            <a href="https://github.com/Metameg" class="custom-btn portfolio-btn">Source Code</a>
         </div>
     </section>
 
@@ -100,7 +100,7 @@
                 <div class="resume-container">
                     <div class="header">
                         <h1>Alexander Metzger</h1>
-                        <p>Denton, TX 76201 | 575-805-9738 | <a href="mailto:ametzger08@gmail.com">ametzger08@gmail.com</a></p>
+                        <p>Denton, TX 76201 | <a href="tel:+15758059738">575-805-9738</a> | <a href="mailto:ametzger08@gmail.com">ametzger08@gmail.com</a></p>
                     </div>
                     
                     <div class="summary">
@@ -154,7 +154,7 @@
                         <p><a href="https://github.com/Metameg">GitHub</a> | <a href="https://alex-metzger.com">Portfolio</a></p>
                     </div> -->
                     <div class="button-container">
-                        <a href="#" class="custom-btn portfolio-btn">Download PDF</a>
+                        <a href="Alex-Metzger_Resume.pdf" class="custom-btn portfolio-btn" download="Alex-Metzger_Resume.pdf">Download PDF</a>
                     </div>
                 </div>
             </section>
@@ -165,13 +165,18 @@
         <div class="skewed-right"></div>
     </section>
 
-    <section class="contact-section">
+    <section id="contact-section">
         <div class="contact-info">
             <img src="assets/images/contact_me.svg" width="200" height="500">
         </div>
         <form class="contact-form">
             <h2>Contact Me</h2>
-            <p>Feel free to reach out to me anytime!</p>
+            <div class="form-info">
+                <p>Email: <a href="mailto:ametzger08@gmail.com">ametzger08@gmail.com</a></p>
+                <p>Phone: <a href="tel:+15758059738">575-805-9738</a></p>
+                <!-- <p class="form-msg">Give me a shout!</p>     -->
+            </div>
+
             <input type="text" placeholder="Name" name="name" required>
             <input type="email" placeholder="Email" name="email" required>
             <textarea placeholder="Message" name="message" required></textarea>
@@ -191,9 +196,9 @@
         </div>
         <div class="footer-bottom">
             <ul class="social-icons">
-                    <li><a href="#"><img src="assets/icons/email.svg" width="50" height="50"></a></li>
-                    <li><a href="#"><img src="assets/icons/phone.svg" width="50" height="50"></a></li>
-                    <li><a href="#"><img src="assets/icons/linkedin.svg" width="50" height="50"></a></li>
+                    <li><a href="mailto:ametzger08@gmail.com"><img src="assets/icons/email.svg" width="50" height="50"></a></li>
+                    <li><a href="tel:+15758059738"><img src="assets/icons/phone.svg" width="50" height="50"></a></li>
+                    <li><a href="https://linkedin.com/in/alex-metzger-699802233"><img src="assets/icons/linkedin.svg" width="50" height="50"></a></li>
             </ul> 
             <p>&copy; Copyright. All rights reserved.</p>
         </div>
