@@ -1,15 +1,29 @@
+@font-face {
+  font-family: "Montserrat-Bold";
+  src: url("../assets/fonts/CourierPrime-Regular.ttf") format("ttf");
+}
+@font-face {
+  font-family: "InriaSans-Regular";
+  src: url("../assets/fonts/CourierPrime-Regular.ttf") format("ttf");
+}
 body, html {
   margin: 0;
   padding: 0;
-  font-family: "Arial", sans-serif;
+  font-family: "InriaSans-Regular", sans-serif;
   background-color: #1c1c1c;
   scroll-behavior: smooth;
 }
 
-h1 {
+h1, h2 {
   color: #66C3FF;
   margin-left: 24px;
   font-size: 36px;
+  font-family: "Montserrat-Bold";
+}
+
+p {
+  font-family: "InriaSans-Regular";
+  font-size: 18px;
 }
 
 .custom-btn {
@@ -313,12 +327,8 @@ h1 {
   z-index: 1;
   position: relative;
 }
-#about-section .paragraphs {
-  display: flex;
-  gap: 5%;
-}
 #about-section .paragraphs p {
-  line-height: 1.6em;
+  line-height: 1.7em;
   z-index: 1;
 }
 
@@ -467,12 +477,13 @@ h1 {
   color: #fff;
   border-bottom: 2px solid #f50057;
   padding-bottom: 10px;
+  padding-left: 20px;
 }
 .resume-overlay .resume-container .summary p, .resume-overlay .resume-container .summary li, .resume-overlay .resume-container .skills p, .resume-overlay .resume-container .skills li, .resume-overlay .resume-container .experience p, .resume-overlay .resume-container .experience li, .resume-overlay .resume-container .education p, .resume-overlay .resume-container .education li, .resume-overlay .resume-container .profiles p, .resume-overlay .resume-container .profiles li {
-  font-size: 1rem;
+  font-size: 18px;
   color: #fff;
 }
-.resume-overlay .resume-container .summary ul, .resume-overlay .resume-container .skills ul, .resume-overlay .resume-container .experience ul, .resume-overlay .resume-container .education ul, .resume-overlay .resume-container .profiles ul {
+.resume-overlay .resume-container .summary p, .resume-overlay .resume-container .summary h3, .resume-overlay .resume-container .skills p, .resume-overlay .resume-container .skills h3, .resume-overlay .resume-container .experience p, .resume-overlay .resume-container .experience h3, .resume-overlay .resume-container .education p, .resume-overlay .resume-container .education h3, .resume-overlay .resume-container .profiles p, .resume-overlay .resume-container .profiles h3 {
   padding-left: 20px;
 }
 .resume-overlay .resume-container .skills ul {
@@ -483,7 +494,7 @@ h1 {
   list-style-type: disc;
 }
 .resume-overlay .resume-container .experience h3, .resume-overlay .resume-container .education h3 {
-  font-size: 1.4rem;
+  font-size: 20px;
   color: #66C3FF;
 }
 .resume-overlay .resume-container .profiles a {
@@ -531,7 +542,7 @@ h1 {
 }
 #contact-section .contact-form h2 {
   text-align: center;
-  font-size: 24px;
+  font-size: 32px;
   margin-top: 45px;
   color: white;
   font-style: bold;
@@ -548,6 +559,9 @@ h1 {
 }
 #contact-section .contact-form input::placeholder, #contact-section .contact-form textarea::placeholder {
   color: #aaa;
+}
+#contact-section .contact-form p {
+  text-align: center;
 }
 #contact-section .contact-form p a {
   color: #f2f980;

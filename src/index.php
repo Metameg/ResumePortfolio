@@ -13,15 +13,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hero Section</title>
     <link rel="stylesheet" href="css/index.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
     <script type="text/javascript" src="https://unpkg.com/@play-ai/web-embed"></script>
     <script type="text/javascript">
-        addEventListener("load", () => {
-            PlayAI.open('0wDta2U5IN1EU0QQOJ-w4');
-        });
+    addEventListener("load", () => {
+        PlayAI.open('0wDta2U5IN1EU0QQOJ-w4');
+    });
     </script>
     <script src="js/ShapeIntersectionObserver.js"></script>
     <script src="js/navbarController.js"></script>
-    <script src="js/showSuccessMessage.js" defer></script> 
+    <script src="js/showSuccessMessage.js" defer></script>
 </head>
 <body>
 
@@ -49,6 +50,7 @@
                 <li><a href="mailto:ametzger08@gmail.com"><img src="assets/icons/email-blue.svg" width="25" height="25"></a></li>
                 <li><a href="tel:+15758059738"><img src="assets/icons/phone-blue.svg" width="20" height="20"></a></li>
                 <li><a href="https://www.linkedin.com/in/alex-metzger-699802233/"><img src="assets/icons/linkedin-blue.svg" width="25" height="25"></a></li>
+                <li><a href="https://www.github.com/Metameg"><img src="assets/icons/github-blue.svg" width="25" height="25"></a></li>
             </ul> 
 
         </nav>
@@ -137,18 +139,35 @@
                         <h2>Experience</h2>
                         <h3>Unloader / Processor | Walmart | Denton, TX</h3>
                         <p>August 2024 - Current</p>
-                        <!-- <ul>
+                        <ul>
                             <li>Unloaded trailers using power equipment</li>
                             <li>Ensured pallet case counts were correct</li>
                             <li>Used Walmart's freight processing and inventory systems to process incoming freight</li>
-                        </ul> -->
+                        </ul>
+
+                        <h3>Backup Systems Operator / Freezer Orderfiller  | Walmart | Corinne, UT</h3>
+                        <p>August 2023 - August 2024</p>
+                        <ul>
+                            <li>Performed daily audits of equipment used throughout warehouse</li>
+                            <li>Monitored system performance to identify potential issues and ensure optimal operations.</li>
+                            <li>Prioritized help desk requests based on urgency and business impact </li>
+                            <li>Managed technical support and maintenance for company-owned mobile devices.</li>
+                        </ul>
+                        
+                        <h3>Freezer Orderfiller  | Walmart | McCarran, NV</h3>
+                        <p>February 2019 - August 2023</p>
+                        <ul>
+                            <li>Achieved performance targets by quickly identifying, locating and counting merchandise for each order.</li>
+                            <li>Built and stacked secure pallets of consumable and non-consumable goods.</li>
+                        </ul>
+
                         <h3>IT Trainee | ECS | Houston, TX</h3>
                         <p>August 2023 - August 2024</p>
-                        <!-- <ul>
+                        <ul>
                             <li>Troubleshooted problems with various software for employees</li>
                             <li>Installed software on employee PCs</li>
                             <li>Troubleshooted networking issues for the office</li>
-                        </ul> -->
+                        </ul>
                     </div>
             
                     <div class="education">
@@ -231,7 +250,6 @@
     
     <script type="module" src="js/contactForm.js"></script>
     <script type="module" src="js/validators.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script type="module">
         import {validators} from "./js/validators.js";
 
@@ -318,6 +336,7 @@
                     <li><a href="mailto:ametzger08@gmail.com"><img src="assets/icons/email.svg" width="50" height="50"></a></li>
                     <li><a href="tel:+15758059738"><img src="assets/icons/phone.svg" width="50" height="50"></a></li>
                     <li><a href="https://linkedin.com/in/alex-metzger-699802233"><img src="assets/icons/linkedin.svg" width="50" height="50"></a></li>
+                    <li><a href="https://github.com/Metameg"><img src="assets/icons/github.svg" width="50" height="50"></a></li>
             </ul> 
             <p>&copy; Copyright. All rights reserved.</p>
         </div>
