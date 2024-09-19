@@ -266,6 +266,9 @@ h1 {
   min-height: 359px;
   bottom: 0;
 }
+.hero .hero-content .img-container .image-content .headshot {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1), 0 -4px 10px rgba(0, 0, 0, 0.1);
+}
 .hero .hero-content .img-container .image-content .img-description {
   font-size: 24px;
 }
