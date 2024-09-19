@@ -541,6 +541,7 @@ h1 {
   border: none;
   border-radius: 5px;
   outline: none;
+  width: 80%;
 }
 #contact-section .contact-form input::-moz-placeholder, #contact-section .contact-form textarea::-moz-placeholder {
   color: #aaa;
@@ -571,7 +572,6 @@ h1 {
   }
   #contact-section .contact-form {
     margin: 0 auto;
-    padding: 0;
   }
   #contact-section .contact-info {
     display: none;

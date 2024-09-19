@@ -622,6 +622,7 @@ h1 {
             border: none;
             border-radius: 5px;
             outline: none;
+            width: 80%;
             
             &::placeholder {
                 color: #aaa;
@@ -655,7 +656,7 @@ h1 {
 
         .contact-form {
             margin: 0 auto;
-            padding: 0;
+            // padding: 0;
         }
 
         .contact-info {
