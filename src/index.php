@@ -11,7 +11,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hero Section</title>
+    <title>Alex Metzger | My Portfolio </title>
+    <meta name="description" content="Alex Metzger is an independent Software Developer trying to develop a career in the field.">
+    <meta name="keywords" content="Alex Metzger, web design, web developers, hire web designers, startup web design, The Domain Designers">
+    <meta name="author" content="Alex Metzger">
+    <link rel="icon" type="image/x-icon" href="assets/images/alex-pic.png">
     <link rel="stylesheet" href="css/index.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
     <script type="text/javascript" src="https://unpkg.com/@play-ai/web-embed"></script>
