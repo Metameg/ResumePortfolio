@@ -1,32 +1,36 @@
 @import 'variables.scss';
 
 
+
 @font-face {
-    font-family: 'Montserrat-Bold'; // Name you want to use in CSS
-    src: url('../assets/fonts/CourierPrime-Regular.ttf') format('ttf'), 
+    font-family: 'Asul-Regular'; 
+    src: url('../assets/fonts/Asul-Regular.ttf') 
 }
 @font-face {
-    font-family: 'InriaSans-Regular'; // Name you want to use in CSS
-    src: url('../assets/fonts/CourierPrime-Regular.ttf') format('ttf'), 
+    font-family: 'RobotoMono-Regular'; // Name you want to use in CSS
+    src: url('../assets/fonts/RobotoMono-Regular.ttf')
+}
+@font-face {
+    font-family: 'Gudea-Regular'; // Name you want to use in CSS
+    src: url('../assets/fonts/Gudea-Regular.ttf')
 }
 
 body, html {
     margin: 0;
     padding: 0;
-    font-family: 'InriaSans-Regular', sans-serif;
+    font-family: 'Gudea-Regular', 'serif';
     background-color: $secondary-color;
     scroll-behavior: smooth;
 }
 
 h1, h2 {
     color: $accent-color;
-    margin-left: 24px;
     font-size: 36px;
-    font-family: 'Montserrat-Bold';
+    font-family: 'Asul-Regular', 'serif';
 }
 
 p {
-    font-family: 'InriaSans-Regular';
+    font-family: 'Gudea-Regular', 'serif';
     font-size: 18px;
 }
 
@@ -39,7 +43,7 @@ p {
     display:inline-block;
     cursor:pointer;
     color:#ffffff;
-    font-family:Courier New;
+    font-family: 'Asul-Regular', 'serif';
     font-size:17px;
     font-weight:bold;
     padding:14px 25px;
@@ -299,7 +303,7 @@ p {
                 height: 50%;
                 max-width: 600px;
                 box-shadow: 0 10px 15px -5px rgb(35 8 6);
-                margin-top: 200px;
+                margin-top: 357px;
 
                 img {
                     border-radius: 8px;
@@ -372,7 +376,7 @@ p {
 #about-section {
     color: white;
     margin-top: 80px;
-    padding: 0 50px;
+    padding: 0 120px;
     z-index: 1;
     position: relative;
 
@@ -389,7 +393,7 @@ p {
 
 #portfolio-section {
     margin: 50px 0;
-    padding: 0 50px;
+    padding: 0 120px;
 
 
     .card-container {
@@ -507,7 +511,7 @@ p {
     
     .resume-container {
         border-radius: 100px;
-        background: none;
+        background: rgba(0,0,0, 0.5);
         padding: 40px;
         max-width: 800px;
         box-shadow: $box-shadow;
@@ -776,10 +780,20 @@ footer {
     z-index: 9999;
 }
   
+@media (max-width: 1200px) {
+
+    #portfolio-section, #about-section {
+        padding: 0 50px;
+    }
+}
 @media (max-width: 768px) {
     .section-divider {
         margin-bottom: 80px;
     }
+
+    // #portfolio-section, #about-section {
+    //     padding: 0 50px;
+    // }
 
     #contact-section {
         flex-direction: column;
@@ -793,6 +807,7 @@ footer {
 }
 
 @media (max-width: 480px) {
+
     .footer-bottom {
         flex-direction: column;
     }

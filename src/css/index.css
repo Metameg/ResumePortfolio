@@ -1,28 +1,31 @@
 @font-face {
-  font-family: "Montserrat-Bold";
-  src: url("../assets/fonts/CourierPrime-Regular.ttf") format("ttf");
+  font-family: "Asul-Regular";
+  src: url("../assets/fonts/Asul-Regular.ttf");
 }
 @font-face {
-  font-family: "InriaSans-Regular";
-  src: url("../assets/fonts/CourierPrime-Regular.ttf") format("ttf");
+  font-family: "RobotoMono-Regular";
+  src: url("../assets/fonts/RobotoMono-Regular.ttf");
+}
+@font-face {
+  font-family: "Gudea-Regular";
+  src: url("../assets/fonts/Gudea-Regular.ttf");
 }
 body, html {
   margin: 0;
   padding: 0;
-  font-family: "InriaSans-Regular", sans-serif;
+  font-family: "Gudea-Regular", "serif";
   background-color: #1c1c1c;
   scroll-behavior: smooth;
 }
 
 h1, h2 {
   color: #66C3FF;
-  margin-left: 24px;
   font-size: 36px;
-  font-family: "Montserrat-Bold";
+  font-family: "Asul-Regular", "serif";
 }
 
 p {
-  font-family: "InriaSans-Regular";
+  font-family: "Gudea-Regular", "serif";
   font-size: 18px;
 }
 
@@ -35,7 +38,7 @@ p {
   display: inline-block;
   cursor: pointer;
   color: #ffffff;
-  font-family: Courier New;
+  font-family: "Asul-Regular", "serif";
   font-size: 17px;
   font-weight: bold;
   padding: 14px 25px;
@@ -270,7 +273,7 @@ p {
   height: 50%;
   max-width: 600px;
   box-shadow: 0 10px 15px -5px rgb(35, 8, 6);
-  margin-top: 200px;
+  margin-top: 357px;
 }
 .hero .hero-content .img-container .image-content img {
   border-radius: 8px;
@@ -323,7 +326,7 @@ p {
 #about-section {
   color: white;
   margin-top: 80px;
-  padding: 0 50px;
+  padding: 0 120px;
   z-index: 1;
   position: relative;
 }
@@ -334,7 +337,7 @@ p {
 
 #portfolio-section {
   margin: 50px 0;
-  padding: 0 50px;
+  padding: 0 120px;
 }
 #portfolio-section .card-container {
   display: flex;
@@ -436,7 +439,7 @@ p {
 }
 .resume-overlay .resume-container {
   border-radius: 100px;
-  background: none;
+  background: rgba(0, 0, 0, 0.5);
   padding: 40px;
   max-width: 800px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1), 0 -4px 10px rgba(0, 0, 0, 0.1);
@@ -679,6 +682,11 @@ footer .logo p {
   z-index: 9999;
 }
 
+@media (max-width: 1200px) {
+  #portfolio-section, #about-section {
+    padding: 0 50px;
+  }
+}
 @media (max-width: 768px) {
   .section-divider {
     margin-bottom: 80px;
