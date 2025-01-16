@@ -232,6 +232,8 @@ p {
   color: #ffffff;
   width: 50%;
   text-align: center;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 20px;
 }
 .hero .hero-content .text-content h2 {
   font-size: 36px;
@@ -517,19 +519,14 @@ p {
   z-index: 1;
   margin-top: 50px;
 }
-#contact-section .contact-info {
+#contact-section .contact-image {
   color: #f50057;
   background: url("../assets/images/hexagon-grid.svg") no-repeat;
-}
-#contact-section .contact-info h2 {
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-#contact-section .contact-info p {
-  font-size: 16px;
+  flex: 1;
 }
 #contact-section .contact-form {
   display: flex;
+  flex: 2;
   align-items: center;
   justify-content: center;
   flex-direction: column;
@@ -571,6 +568,8 @@ p {
 }
 #contact-section .contact-form .validation-box {
   display: flex;
+  width: 100%;
+  justify-content: center;
 }
 #contact-section .contact-form .validation-box .error {
   margin-top: 30px;

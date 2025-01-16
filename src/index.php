@@ -115,7 +115,7 @@
             <section class="resume-overlay">
                 <div class="resume-container">
                     <div class="header">
-                        <h1>Alexander Metzger</h1>
+                        <h1>Alex Metzger</h1>
                         <p>Denton, TX 76201 | <a href="tel:+15758059738">575-805-9738</a> | <a href="mailto:ametzger08@gmail.com">ametzger08@gmail.com</a></p>
                     </div>
                     
@@ -123,31 +123,21 @@
                         <h2>Professional Summary</h2>
                         <p>Talented Freelance Developer skilled at completing daily assignments and producing creative solutions for business requirements. Always willing to take on new task.
                     </div>
-                    
-                    <div class="skills">
-                        <h2>Skills</h2>
-                        <ul>
-                            <li>Python</li>
-                            <li>C++</li>
-                            <li>JavaScript</li>
-                            <li>Pytorch</li>
-                            <li>HTML</li>
-                            <li>MySQL</li>
-                            <li>Java</li>
-                            <li>CSS3</li>
-                            <li>Cloud Computing (AWS)</li>
-                        </ul>
+
+
+                    <div class="education">
+                        <h2>Education</h2>
+                        <h3>MS Artificial Intelligence | University of North Texas</h3>
+                        <p>In Progress | Current GPA - 4.0</p>
+                        <h3>BS Computer Science | Southern New Hampshire University</h3>
+                        <p>Graduated Magna Cum Laude | GPA: 3.73</p>
                     </div>
+                    
                     
                     <div class="experience">
                         <h2>Experience</h2>
                         <h3>Unloader / Processor | Walmart | Denton, TX</h3>
                         <p>August 2024 - Current</p>
-                        <ul>
-                            <li>Unloaded trailers using power equipment</li>
-                            <li>Ensured pallet case counts were correct</li>
-                            <li>Used Walmart's freight processing and inventory systems to process incoming freight</li>
-                        </ul>
 
                         <h3>Backup Systems Operator / Freezer Orderfiller  | Walmart | Corinne, UT</h3>
                         <p>August 2023 - August 2024</p>
@@ -160,30 +150,27 @@
                         
                         <h3>Freezer Orderfiller  | Walmart | McCarran, NV</h3>
                         <p>February 2019 - August 2023</p>
-                        <ul>
-                            <li>Achieved performance targets by quickly identifying, locating and counting merchandise for each order.</li>
-                            <li>Built and stacked secure pallets of consumable and non-consumable goods.</li>
-                        </ul>
-
-                        <h3>IT Trainee | ECS | Houston, TX</h3>
-                        <p>August 2023 - August 2024</p>
-                        <ul>
-                            <li>Troubleshooted problems with various software for employees</li>
-                            <li>Installed software on employee PCs</li>
-                            <li>Troubleshooted networking issues for the office</li>
-                        </ul>
                     </div>
-            
-                    <div class="education">
-                        <h2>Education</h2>
-                        <h3>MS Artificial Intelligence | University of North Texas</h3>
-                        <p>In Progress</p>
-                        <h3>BS Computer Science | Southern New Hampshire University</h3>
-                        <p>Graduated Magna Cum Laude | GPA: 3.73</p>
+
+
+                    <div class="skills">
+                        <h2>Skills</h2>
+                        <ul>
+                            <li>Flask</li>
+                            <li>JS ES6 / JQuery</li>
+                            <li>React</li>
+                            <li>PHP</li>
+                            <li>Pytorch</li>
+                            <li>HTML</li>
+                            <li>MySQL</li>
+                            <li>CSS3</li>
+                            <li>Cloud Computing (AWS)</li>
+                            <li>Docker</li>
+                        </ul>
                     </div>
             
                     <div class="button-container">
-                        <a href="Alex-Metzger_Resume.pdf" class="custom-btn portfolio-btn" download="Alex-Metzger_Resume.pdf">Download PDF</a>
+                        <a href="AlexMetzgerResume2025.pdf" class="custom-btn portfolio-btn" download="Alex-Metzger_Resume.pdf">Download PDF</a>
                     </div>
                 </div>
             </section>
@@ -195,7 +182,7 @@
     </section>
 
     <section id="contact-section">
-        <div class="contact-info">
+        <div class="contact-image">
             <img src="assets/images/contact_me.svg" width="200" height="500">
         </div>
         <form id="contact_form" class="contact-form" method="post" enctype="multipart/form-data">
