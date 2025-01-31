@@ -93,7 +93,10 @@
     <section id="portfolio-section">
         <h1>Recent Projects</h1>
         <div class="card-container">
-            <a href="#" class="card omniclip-card">
+            <a href="https://southwestcandles.shop" class="card swcandles-card">
+                <div class="card-title">Southwest Candles</div>
+            </a>
+            <a href="https://github.com/Metameg/Omniclip" class="card omniclip-card">
                 <div class="card-title">OmniClip</div>
             </a>
             <a href="https://thedomaindesigners.com/" class="card tdd-card">
@@ -133,6 +136,21 @@
                         <p>Graduated Magna Cum Laude | GPA: 3.73</p>
                     </div>
                     
+                    <div class="skills">
+                        <h2>Relevant Skills</h2>
+                        <ul>
+                            <li>Flask</li>
+                            <li>JS ES6 / JQuery</li>
+                            <li>React</li>
+                            <li>PHP</li>
+                            <li>Pytorch</li>
+                            <li>HTML</li>
+                            <li>MySQL</li>
+                            <li>CSS3</li>
+                            <li>Cloud Computing (AWS)</li>
+                            <li>Docker</li>
+                        </ul>
+                    </div>
                     
                     <div class="experience">
                         <h2>Experience</h2>
@@ -152,25 +170,9 @@
                         <p>February 2019 - August 2023</p>
                     </div>
 
-
-                    <div class="skills">
-                        <h2>Skills</h2>
-                        <ul>
-                            <li>Flask</li>
-                            <li>JS ES6 / JQuery</li>
-                            <li>React</li>
-                            <li>PHP</li>
-                            <li>Pytorch</li>
-                            <li>HTML</li>
-                            <li>MySQL</li>
-                            <li>CSS3</li>
-                            <li>Cloud Computing (AWS)</li>
-                            <li>Docker</li>
-                        </ul>
-                    </div>
             
                     <div class="button-container">
-                        <a href="AlexMetzgerResume2025.pdf" class="custom-btn portfolio-btn" download="Alex-Metzger_Resume.pdf">Download PDF</a>
+                        <a href="AlexMetzgerResume-2025.pdf" class="custom-btn portfolio-btn" download="AlexMetzgerResume-2025.pdf">Download PDF</a>
                     </div>
                 </div>
             </section>

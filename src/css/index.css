@@ -344,6 +344,13 @@ p {
 #portfolio-section .card-container {
   display: flex;
   justify-content: space-around;
+  gap: 15px;
+}
+#portfolio-section .card-container .swcandles-card {
+  background: url("../assets/images/swcandles.jpg") no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-color: #000;
 }
 #portfolio-section .card-container .omniclip-card {
   background: url("../assets/images/omni-thumbnail.jpg") no-repeat;
@@ -386,7 +393,7 @@ p {
   opacity: 1;
   transform: translate(-50%, -50%) scale(1);
 }
-@media (max-width: 1200px) {
+@media (max-width: 768px) {
   #portfolio-section .card-container {
     flex-direction: column;
     justify-content: center;
