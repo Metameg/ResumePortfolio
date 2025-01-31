@@ -530,6 +530,8 @@ p {
   color: #f50057;
   background: url("../assets/images/hexagon-grid.svg") no-repeat;
   flex: 1;
+  display: flex;
+  justify-content: center;
 }
 #contact-section .contact-form {
   display: flex;

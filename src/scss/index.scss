@@ -612,6 +612,8 @@ p {
         color: $primary-color;
         background: url("../assets/images/hexagon-grid.svg") no-repeat;
         flex: 1;
+        display: flex;
+        justify-content: center;
     }
   
     .contact-form {
