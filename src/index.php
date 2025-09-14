@@ -17,13 +17,14 @@
     <meta name="author" content="Alex Metzger">
     <link rel="icon" type="image/x-icon" href="assets/images/alex-pic.png">
     <link rel="stylesheet" href="css/index.css">
+    <!-- https://swiperjs.com/swiper-api -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
-    <script type="text/javascript" src="https://unpkg.com/@play-ai/web-embed"></script>
+    <!-- <script type="text/javascript" src="https://unpkg.com/@play-ai/web-embed"></script>
     <script type="text/javascript">
     addEventListener("load", () => {
         PlayAI.open('0wDta2U5IN1EU0QQOJ-w4');
     });
-    </script>
+    </script> -->
     <script src="js/ShapeIntersectionObserver.js"></script>
     <script src="js/navbarController.js"></script>
     <script src="js/showSuccessMessage.js" defer></script>
@@ -93,6 +94,63 @@
     <section id="portfolio-section">
         <h1>Recent Projects</h1>
         <div class="card-container">
+            
+            <!-- Southwest Candles -->
+            <a href="https://southwestcandles.shop" class="card">
+                <img src="assets/images/swcandles.jpg" alt="Southwest Candles" class="card-img" />
+                <div class="card-content">
+                    <div class="card-title">Southwest Candles</div>
+                    <div class="pill-container">
+                        <span class="pill">Custom Design</span>
+                        <span class="pill">Stripe API</span>
+                        <span class="pill">MYSQL</span>
+                        <span class="pill">HTML5</span>
+                        <span class="pill">CSS3</span>
+                        <span class="pill">Javascript</span>
+                        <span class="pill">PHP</span>
+                    </div>
+                </div>
+            </a>
+
+            <!-- OmniClip -->
+            <a href="https://github.com/Metameg/Omniclip" class="card">
+                <img src="assets/images/omni-thumbnail.jpg" alt="OmniClip" class="card-img" />
+                <div class="card-content">
+                    <div class="card-title">OmniClip</div>
+                    <div class="pill-container">
+                        <span class="pill">AI</span>
+                        <span class="pill">Flask</span>
+                        <span class="pill">MYSQL</span>
+                        <span class="pill">CSS3</span>
+                        <span class="pill">Javascript</span>
+                    </div>
+                </div>
+            </a>
+
+            <!-- The Domain Designers -->
+            <a href="https://thedomaindesigners.com/" class="card">
+                <img src="assets/images/tdd_logo.png" alt="The Domain Designers" class="card-img" />
+                <div class="card-content">
+                    <div class="card-title">The Domain Designers</div>
+                    <div class="pill-container">
+                        <span class="pill">Custom Design</span>
+                        <span class="pill">HTML5</span>
+                        <span class="pill">CSS3</span>
+                        <span class="pill">Javascript</span>
+                        <span class="pill">PHP</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="button-container">
+            <a href="https://github.com/Metameg" class="custom-btn portfolio-btn">Source Code</a>
+        </div>
+    </section>
+
+    <!-- <section id="portfolio-section">
+        <h1>Recent Projects</h1>
+        <div class="card-container">
             <a href="https://southwestcandles.shop" class="card swcandles-card">
                 <div class="card-title">Southwest Candles</div>
             </a>
@@ -107,7 +165,7 @@
         <div class="button-container">
             <a href="https://github.com/Metameg" class="custom-btn portfolio-btn">Source Code</a>
         </div>
-    </section>
+    </section> -->
 
     <section class="section-divider">
         <div class="skewed-left"></div>
@@ -183,61 +241,66 @@
         <div class="skewed-right"></div>
     </section>
 
-    <section id="contact-section">
-        <div class="contact-image">
-            <img src="assets/images/contact_me.svg" width="200" height="500">
-        </div>
-        <form id="contact_form" class="contact-form" method="post" enctype="multipart/form-data">
-            <h2>Contact Me</h2>
-            <p class="form-msg">Give me a shout!</p>    
-            <div class="form-info">
-                <p>Email: <a href="mailto:ametzger08@gmail.com">ametzger08@gmail.com</a></p>
-                <p>Phone: <a href="tel:+15758059738">575-805-9738</a></p>
-            </div>
 
-            <div class="validation-box">
-                <input id="full_name" type="text" placeholder="Name" name="name" required>
-                <img id="name_success" class="success_icon" src="assets/icons/green_check.svg" width="20" height="20">
+    <section id="contact-section">
+        <div class="contact-left">
+            <h2>Have a <br> Question?</h2>
+            <p>
+            Thank you for visiting my website. I'm a software developer with a strong focus in Artificial Intelligence and I'm currently seeking new opportunities to apply my skills in innovative projects.
+            </p>
+            <p>
+            I personally review all messages, so please allow up to 24 hours for a response. I look forward to hearing from you!
+            </p>
+
+            <div class="contact-info">
+            <p><img src="assets/icons/email.svg" width="20" height="20"><a href="mailto:ametzger8@gmail.com">      ametzger08@gmail.com</a></p>
+            <p><img src="assets/icons/phone.svg" width="20" height="20"><a href="tel:5758059738">       575-805-9738</a></p>
             </div>
+        </div>
+
+        <form id="contact_form" class="contact-form" method="post">
+            <div class="form-row">
+                <div class="validation-box">
+                    <input type="text" id="full_name" name="name" placeholder="*Full Name" required>
+                    <img id="name_success" class="success_icon" src="assets/icons/green_check.svg" width="20" height="20">
+                </div>
+            </div> 
             <span id="name_error" class="error_msg">Field is Required</span>
 
-            <div class="validation-box">
-                <input id="email" type="email" placeholder="Email" name="email" required>
-                <img id="email_success" class="success_icon" src="assets/icons/green_check.svg" width="20" height="20">
+            <div class="form-row">
+                <div class="validation-box">
+                    <input type="email" id="email" name="email" placeholder="*Email" required>
+                    <img id="email_success" class="success_icon" src="assets/icons/green_check.svg" width="20" height="20">
+                </div>
             </div>
             <span id="email_error" class="error_msg">Field is Required</span>
 
-            <div class="validation-box">
-                <input id="phone" type="phone" placeholder="Phone" name="phone" required>
-                <img id="phone_success" class="success_icon" src="assets/icons/green_check.svg" width="20" height="20">
-            </div>  
-            <span id="phone_error" class="error_msg">Field is Required</span>
+            <div class="form-row">
+                <div class="validation-box">
+                    <input type="tel" id="phone" name="phone" placeholder="Phone Number (optional)">
+                    <img id="phone_success" class="success_icon" src="assets/icons/green_check.svg" width="20" height="20">
+                </div>
+            </div>
 
-            <div class="validation-box">
-                <textarea id="message" placeholder="Message" name="message" required></textarea>
-                <img id="message_success" class="success_icon" src="assets/icons/green_check.svg" width="20" height="20">
+            <div class="form-row">
+                <div class="validation-box">
+                    <textarea id="message" name="message" placeholder="*Message" required></textarea>
+                    <img id="message_success" class="success_icon" src="assets/icons/green_check.svg" width="20" height="20">
+                </div>
             </div>
             <span id="message_error" class="error_msg">Field is Required</span>
 
             <input type="hidden" name="csrf_token" value="<?php echo htmlspecialchars($_SESSION['csrf_token']); ?>">
-            <button type="submit" class="custom-btn">Submit</button>
+
+            <button type="submit">SUBMIT</button>
+
             <span id="form_error" class="error">
-                There was a problem submitting the form. <br />
-                Check the fields for errors.
+            There was a problem submitting the form. <br />
+            Check the fields for errors.
             </span>
             <div id="responseMessage"></div>
-
         </form>
-        
-        <div id="spinner_overlay" class="spinner-overlay">
-            <div class="spinner"></div>
-        </div>
-
-        <div class="section-divider">
-            <div class="skewed-left footer-section-divider"></div>
-        </div>
-
-    </section>
+        </section>
      
     <!-- Response Message for debugging -->
     
