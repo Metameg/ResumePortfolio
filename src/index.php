@@ -29,7 +29,6 @@
     <script src="js/navbarController.js"></script>
     <script src="js/showSuccessMessage.js" defer></script>
     <script src="js/confetti.js" defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
 </head>
 <body>
 
