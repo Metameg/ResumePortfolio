@@ -568,7 +568,6 @@ p {
 }
 
 
-
 .resume-section {
     position: relative;
     min-height: 100vh; 
@@ -620,6 +619,23 @@ p {
         margin-top: 145px;
         z-index: 2;
 
+
+        .confetti-trigger {
+            display: inline-block;
+            position: relative;
+            font-weight: bold;
+            color: #d3bd0f;
+
+            .confetti-canvas {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                pointer-events: none; // don’t block text selection or clicks
+            }
+        }
+
         .button-container {
             width: 100%;
             display: flex;
@@ -642,8 +658,7 @@ p {
                 color: $accent-color;
             }
             a {
-                color: #0073e6;
-                text-decoration: none;
+                color: #fff;
             }
         }
 

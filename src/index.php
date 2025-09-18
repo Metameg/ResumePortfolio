@@ -28,6 +28,8 @@
     <script src="js/ShapeIntersectionObserver.js"></script>
     <script src="js/navbarController.js"></script>
     <script src="js/showSuccessMessage.js" defer></script>
+    <script src="js/confetti.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
 </head>
 <body>
 
@@ -174,68 +176,98 @@
     <section class="resume-section">
         <div class="shape-container">
             <section class="resume-overlay">
-                <div class="resume-container">
-                    <div class="header">
-                        <h1>Alex Metzger</h1>
-                        <p>Denton, TX 76201 | <a href="tel:+15758059738">575-805-9738</a> | <a href="mailto:ametzger08@gmail.com">ametzger08@gmail.com</a></p>
-                    </div>
+            <div class="resume-container">
+                
+                <!-- Header -->
+                <div class="header">
+                    <h1>Alex Metzger</h1>
                     
-                    <div class="summary">
-                        <h2>Professional Summary</h2>
-                        <p>Talented Freelance Developer skilled at completing daily assignments and producing creative solutions for business requirements. Always willing to take on new task.
-                    </div>
-
-
-                    <div class="education">
-                        <h2>Education</h2>
-                        <h3>MS Artificial Intelligence | University of North Texas</h3>
-                        <p>In Progress | Current GPA - 4.0</p>
-                        <h3>BS Computer Science | Southern New Hampshire University</h3>
-                        <p>Graduated Magna Cum Laude | GPA: 3.73</p>
-                    </div>
-                    
-                    <div class="skills">
-                        <h2>Relevant Skills</h2>
-                        <ul>
-                            <li>Flask</li>
-                            <li>JS ES6 / JQuery</li>
-                            <li>React</li>
-                            <li>PHP</li>
-                            <li>Pytorch</li>
-                            <li>HTML</li>
-                            <li>MySQL</li>
-                            <li>CSS3</li>
-                            <li>Cloud Computing (AWS)</li>
-                            <li>Docker</li>
-                        </ul>
-                    </div>
-                    
-                    <div class="experience">
-                        <h2>Experience</h2>
-                        <h3>Unloader / Processor | Walmart | Denton, TX</h3>
-                        <p>August 2024 - Current</p>
-
-                        <h3>Backup Systems Operator / Freezer Orderfiller  | Walmart | Corinne, UT</h3>
-                        <p>August 2023 - August 2024</p>
-                        <ul>
-                            <li>Performed daily audits of equipment used throughout warehouse</li>
-                            <li>Monitored system performance to identify potential issues and ensure optimal operations.</li>
-                            <li>Prioritized help desk requests based on urgency and business impact </li>
-                            <li>Managed technical support and maintenance for company-owned mobile devices.</li>
-                        </ul>
-                        
-                        <h3>Freezer Orderfiller  | Walmart | McCarran, NV</h3>
-                        <p>February 2019 - August 2023</p>
-                    </div>
-
-            
-                    <div class="button-container">
-                        <a href="AlexMetzgerResume-2025.pdf" class="custom-btn portfolio-btn" download="AlexMetzgerResume-2025.pdf">Download PDF</a>
-                    </div>
+                    <p>
+                        <img src="assets/icons/phone.svg" width="20" height="20"><a href="tel:+15758059738">575-805-9738</a> | 
+                        <img src="assets/icons/email.svg" width="20" height="20"><a href="mailto:ametzger08@gmail.com">ametzger08@gmail.com</a> | 
+                        <img src="assets/icons/phone.svg" width="20" height="20"><a href="https://www.alex-metzger.com" target="_blank">alex-metzger.com</a>
+                    </p>
+                    <p>
+                        <img src="assets/icons/github.svg" width="20" height="20"><a href="https://www.github.com/Metameg" target="_blank">GitHub</a> | 
+                        <img src="assets/icons/linkedin.svg" width="20" height="20"><a href="https://www.linkedin.com/in/alex-metzger-699802233" target="_blank">LinkedIn</a>
+                    </p>
                 </div>
+
+                <!-- Experience -->
+                <div class="experience">
+                <h2>Experience</h2>
+
+                <h3>AI Research Assistant | University of North Texas</h3>
+                <p>May 2025 - Present</p>
+                <ul>
+                    <li>Conducted AI research on multi-label classification tasks using 
+                        <span class=" confetti-trigger">Large Language Models
+                            <canvas class="confetti-canvas"></canvas>
+                        </span>.
+                    </li>
+                    <li>Designed and executed experiments exploring mutual information as an alternative evaluation metric.</li>
+                    <li>Applied <span class=" confetti-trigger">prompt engineering
+                                    <canvas class="confetti-canvas"></canvas>
+                                </span> techniques to optimize LLM performance.</li>
+                    <li>Documented methodology, findings, and results for integration into research reports and publications.</li>
+                    <li>Collaborated with team members to refine experimental design and interpret results.</li>
+                </ul>
+
+                <h3>Freelancer | The Domain Designers</h3>
+                <p>Dec 2024 - Present</p>
+                <ul>
+                    <li>Designed and developed
+                                 <span class=" confetti-trigger">responsive websites
+                                    <canvas class="confetti-canvas"></canvas>
+                                </span> for small business owners.</li>
+                    <li>Built dynamic, user-friendly interfaces with 
+                                <span class=" confetti-trigger">modern JavaScript frameworks
+                                    <canvas class="confetti-canvas"></canvas>
+                                </span> and reusable components.</li>
+                    <li>Integrated 
+                                <span class=" confetti-trigger"> third-party services and APIs
+                                    <canvas class="confetti-canvas"></canvas>
+                                </span> to enhance site functionality.</li>
+                    <li>Optimized website performance for speed, accessibility, and SEO.</li>
+                    <li>Collaborated directly with clients to gather requirements and deliver custom solutions.</li>
+                </ul>
+
+                <h3>Unloader / Freezer Orderfiller | Walmart</h3>
+                <p>Feb 2019 - Present</p>
+                </div>
+
+                <!-- Education -->
+                <div class="education">
+                <h2>Education</h2>
+                <h3>MS Artificial Intelligence | University of North Texas</h3>
+                <p>Aug 2024 - Present | 
+                                <span class=" confetti-trigger">GPA: 4.0
+                                    <canvas class="confetti-canvas"></canvas>
+                                </span></p>
+
+                <h3>BS Computer Science | Southern New Hampshire University</h3>
+                <p>Aug 2020 - May 2022 | 
+                                <span class=" confetti-trigger">GPA: 3.73
+                                    <canvas class="confetti-canvas"></canvas>
+                                </span> | 
+                                <span class=" confetti-trigger">Magna Cum Laude
+                                    <canvas class="confetti-canvas"></canvas>
+                                </span></p>
+
+                <h3>Computer Engineering | Texas A&M University</h3>
+                <p>Aug 2013 - Dec 2016</p>
+                </div>
+
+                <!-- Download -->
+                <div class="button-container">
+                <a href="AlexMetzgerResume-2025.pdf" class="custom-btn portfolio-btn" download="AlexMetzgerResume-2025.pdf">Download PDF</a>
+                </div>
+
+            </div>
             </section>
         </div>
-    </section>
+        </section>
+
 
     <section class="section-divider">
         <div class="skewed-right"></div>
