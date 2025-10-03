@@ -199,6 +199,11 @@
                 <h3>AI Research Assistant | University of North Texas</h3>
                 <p>May 2025 - Present</p>
                 <ul>
+                    <li>Conducted research for 
+                        <span class=" confetti-trigger">DoD Cyber Exchange
+                            <canvas class="confetti-canvas"></canvas>
+                        </span>projects.
+                    </li>
                     <li>Conducted AI research on multi-label classification tasks using 
                         <span class=" confetti-trigger">Large Language Models
                             <canvas class="confetti-canvas"></canvas>
@@ -239,23 +244,35 @@
                 <div class="education">
                 <h2>Education</h2>
                 <h3>MS Artificial Intelligence | University of North Texas</h3>
-                <p>Aug 2024 - Present | 
+                <p><i>expected to graduate</i> December 2026 | 
                                 <span class=" confetti-trigger">GPA: 4.0
                                     <canvas class="confetti-canvas"></canvas>
                                 </span></p>
 
                 <h3>BS Computer Science | Southern New Hampshire University</h3>
-                <p>Aug 2020 - May 2022 | 
+                <p><i>graduated</i> May 2022 | 
                                 <span class=" confetti-trigger">GPA: 3.73
                                     <canvas class="confetti-canvas"></canvas>
                                 </span> | 
                                 <span class=" confetti-trigger">Magna Cum Laude
                                     <canvas class="confetti-canvas"></canvas>
                                 </span></p>
-
-                <h3>Computer Engineering | Texas A&M University</h3>
-                <p>Aug 2013 - Dec 2016</p>
                 </div>
+
+                <!-- Education -->
+                <div class="accomplishments">
+                <h2>Accomplishments</h2>
+                <p> <span class=" confetti-trigger">1st Author of published research paper
+                        <canvas class="confetti-canvas"></canvas>
+                    </span> at the Cognitive Machine Intelligence (CogMI) 2025 Conference
+(Pittsburgh, PN): <strong class="bold-color">“Dependence Minimization for Multi-Label Classification: An Alternative to Human Labeling"</strong>
+                </p> 
+                <p> <span class=" confetti-trigger">3rd author of published research paper
+                        <canvas class="confetti-canvas"></canvas>
+                    </span> paper at the Cognitive Machine Intelligence (CogMI) 2025 Conference
+(Pittsburgh, PN): <strong class="bold-color">“Prompts and Thoughts: Can Your Cyber Curriculum Meet the Job Skills”</strong>
+                </p> 
+                                
 
                 <!-- Download -->
                 <div class="button-container">

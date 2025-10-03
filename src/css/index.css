@@ -500,22 +500,25 @@ p {
 .resume-overlay .resume-container .header a {
   color: #fff;
 }
-.resume-overlay .resume-container .summary, .resume-overlay .resume-container .skills, .resume-overlay .resume-container .experience, .resume-overlay .resume-container .education, .resume-overlay .resume-container .profiles {
+.resume-overlay .resume-container .summary, .resume-overlay .resume-container .skills, .resume-overlay .resume-container .experience, .resume-overlay .resume-container .education, .resume-overlay .resume-container .profiles, .resume-overlay .resume-container .accomplishments {
   margin: 20px 0;
 }
-.resume-overlay .resume-container .summary h2, .resume-overlay .resume-container .skills h2, .resume-overlay .resume-container .experience h2, .resume-overlay .resume-container .education h2, .resume-overlay .resume-container .profiles h2 {
+.resume-overlay .resume-container .summary h2, .resume-overlay .resume-container .skills h2, .resume-overlay .resume-container .experience h2, .resume-overlay .resume-container .education h2, .resume-overlay .resume-container .profiles h2, .resume-overlay .resume-container .accomplishments h2 {
   font-size: 1.8rem;
   color: #fff;
   border-bottom: 2px solid #f50057;
   padding-bottom: 10px;
   padding-left: 20px;
 }
-.resume-overlay .resume-container .summary p, .resume-overlay .resume-container .summary li, .resume-overlay .resume-container .skills p, .resume-overlay .resume-container .skills li, .resume-overlay .resume-container .experience p, .resume-overlay .resume-container .experience li, .resume-overlay .resume-container .education p, .resume-overlay .resume-container .education li, .resume-overlay .resume-container .profiles p, .resume-overlay .resume-container .profiles li {
+.resume-overlay .resume-container .summary p, .resume-overlay .resume-container .summary li, .resume-overlay .resume-container .skills p, .resume-overlay .resume-container .skills li, .resume-overlay .resume-container .experience p, .resume-overlay .resume-container .experience li, .resume-overlay .resume-container .education p, .resume-overlay .resume-container .education li, .resume-overlay .resume-container .profiles p, .resume-overlay .resume-container .profiles li, .resume-overlay .resume-container .accomplishments p, .resume-overlay .resume-container .accomplishments li {
   font-size: 18px;
   color: #fff;
 }
-.resume-overlay .resume-container .summary p, .resume-overlay .resume-container .summary h3, .resume-overlay .resume-container .skills p, .resume-overlay .resume-container .skills h3, .resume-overlay .resume-container .experience p, .resume-overlay .resume-container .experience h3, .resume-overlay .resume-container .education p, .resume-overlay .resume-container .education h3, .resume-overlay .resume-container .profiles p, .resume-overlay .resume-container .profiles h3 {
+.resume-overlay .resume-container .summary p, .resume-overlay .resume-container .summary h3, .resume-overlay .resume-container .skills p, .resume-overlay .resume-container .skills h3, .resume-overlay .resume-container .experience p, .resume-overlay .resume-container .experience h3, .resume-overlay .resume-container .education p, .resume-overlay .resume-container .education h3, .resume-overlay .resume-container .profiles p, .resume-overlay .resume-container .profiles h3, .resume-overlay .resume-container .accomplishments p, .resume-overlay .resume-container .accomplishments h3 {
   padding-left: 20px;
+}
+.resume-overlay .resume-container .summary .bold-color, .resume-overlay .resume-container .skills .bold-color, .resume-overlay .resume-container .experience .bold-color, .resume-overlay .resume-container .education .bold-color, .resume-overlay .resume-container .profiles .bold-color, .resume-overlay .resume-container .accomplishments .bold-color {
+  color: #66C3FF;
 }
 .resume-overlay .resume-container .skills ul {
   -moz-columns: 2;
